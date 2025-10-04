@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Znicze i Ozdoby Świąteczne</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background: #c62828;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      text-align: center;
+      margin: 15px;
+    }
+    nav button {
+      margin: 5px;
+      padding: 8px 12px;
+      background: #c62828;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    h2 {
+      color: #c62828;
+    }
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .product {
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      padding: 10px;
+      width: calc(33% - 20px);
+      box-sizing: border-box;
+      text-align: center;
+    }
+    .product img {
+      width: 100%;
+      height: auto;
+      max-height: 200px;
+      object-fit: cover;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    input, textarea {
+      padding: 10px;
+      border: 1px solid #aaa;
+      border-radius: 4px;
+      width: 100%;
+    }
+    input[type="submit"] {
+      background: #c62828;
+      color: white;
+      cursor: pointer;
+      border: none;
+    }
+    footer {
+      background: #eee;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+    }
+
+    @media (max-width: 768px) {
+      .product {
+        width: calc(50% - 20px);
+      }
+    }
+
+    @media (max-width: 480px) {
+      .product {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 id="main-title">Znicze i Dekoracje Świąteczne</h1>
+    <p id="subtitle">Sprzedaż ozdób na Wszystkich Świętych, Boże Narodzenie i Wielkanoc</p>
+  </header>
+
+  <nav>
+    <button onclick="setLanguage('pl')">Polski</button>
+    <button onclick="setLanguage('en')">English</button>
+  </nav>
+
+  <div class="container">
+    <section>
+      <h2 id="section-products-title">Nasze Produkty</h2>
+      <div class="products">
+        <div class="product">
+          <img src="https://via.placeholder.com/300x200?text=Znicz+1" alt="Znicz 1" />
+          <p id="product1">Znicz szklany z wkładem</p>
+        </div>
+        <div class="product">
+          <img src="https://via.placeholder.com/300x200?text=Miko%C5%82aj" alt="Mikołaj" />
+          <p id="product2">Figurka Mikołaja</p>
+        </div>
+        <div class="product">
+          <img src="https://via.placeholder.com/300x200?text=Stroik" alt="Stroik" />
+          <p id="product3">Stroik świąteczny ręcznie robiony</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2 id="section-contact-title">Kontakt</h2>
+      <form>
+        <input type="text" placeholder="Imię i nazwisko" required />
+        <input type="email" placeholder="Adres e-mail" required />
+        <textarea placeholder="Twoja wiadomość" rows="5" required></textarea>
+        <input type="submit" value="Wyślij wiadomość" />
+      </form>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Znicze i Ozdoby Świąteczne</p>
+  </footer>
+
+  <script>
+    const translations = {
+      en: {
+        'main-title': 'Candles & Holiday Decorations',
+        'subtitle': 'Sale of decorations for All Saints’ Day, Christmas and Easter',
+        'section-products-title': 'Our Products',
+        'section-contact-title': 'Contact',
+        'product1': 'Glass candle with refill',
+        'product2': 'Santa figurine',
+        'product3': 'Handmade holiday wreath',
+        'placeholderName': 'Full name',
+        'placeholderEmail': 'Email address',
+        'placeholderMessage': 'Your message',
+        'submit': 'Send message'
+      },
+      pl: {
+        'main-title': 'Znicze i Dekoracje Świąteczne',
+        'subtitle': 'Sprzedaż ozdób na Wszystkich Świętych, Boże Narodzenie i Wielkanoc',
+        'section-products-title': 'Nasze Produkty',
+        'section-contact-title': 'Kontakt',
+        'product1': 'Znicz szklany z wkładem',
+        'product2': 'Figurka Mikołaja',
+        'product3': 'Stroik świąteczny ręcznie robiony',
+        'placeholderName': 'Imię i nazwisko',
+        'placeholderEmail': 'Adres e-mail',
+        'placeholderMessage': 'Twoja wiadomość',
+        'submit': 'Wyślij wiadomość'
+      }
+    };
+
+    function setLanguage(lang) {
+      const t = translations[lang];
+      document.getElementById('main-title').textContent = t['main-title'];
+      document.getElementById('subtitle').textContent = t['subtitle'];
+      document.getElementById('section-products-title').textContent = t['section-products-title'];
+      document.getElementById('section-contact-title').textContent = t['section-contact-title'];
+      document.getElementById('product1').textContent = t['product1'];
+      document.getElementById('product2').textContent = t['product2'];
+      document.getElementById('product3').textContent = t['product3'];
+      document.querySelector('input[type="text"]').placeholder = t['placeholderName'];
+      document.querySelector('input[type="email"]').placeholder = t['placeholderEmail'];
+      document.querySelector('textarea').placeholder = t['placeholderMessage'];
+      document.querySelector('input[type="submit"]').value = t['submit'];
+    }
+  </script>
+</body>
+</html>
