@@ -1,308 +1,126 @@
-<!DOCTYPE html>
+
+
+
+<!doctype html>
 <html lang="pl">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Znicze i Ozdoby Świąteczne</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Aromafall — Dyfuzory i olejki</title>
+  <meta name="description" content="Dyfuzory zapachowe, kadzidła wodospad i naturalne olejki eteryczne — Aromafall">
   <style>
-    body {
-      <!DOCTYPE html>
-<html lang="pl">
-<head>
-  <meta charset="UTF-8">
-  <title>Sklep – Znicze i Ozdoby</title>
-  <style>
-    body { font-family: Arial; padding: 20px; }
-    nav a { margin: 0 10px; text-decoration: none; }
-    .product { border: 1px solid #ccc; padding: 10px; margin: 10px 0; }
-    .product input { width: 50px; }
-    #cart { position: fixed; top: 20px; right: 20px; background: #f8f8f8; border: 1px solid #ccc; padding: 10px; width: 250px; }
-    #cart ul { padding: 0; list-style: none; }
-    #cart li { margin-bottom: 5px; }
-    button { cursor: pointer; }
-  </style>
-</head>
-<body>
-
-<!-- MENU -->
-<nav>
-  <a href="#boze-narodzenie">🎄 Boże Narodzenie</a>
-  <a href="#wielkanoc">🐣 Wielkanoc</a>
-  <a href="#wszystkich-swietych">🕯️ Wszystkich Świętych</a>
-  <a href="#promocje">🔥 Promocje</a>
-  <a href="#nowosci">🆕 Nowości</a>
-</nav>
-
-<!-- KOSZYK -->
-<div id="cart">
-  <h3>🛒 Koszyk (<span id="cart-count">0</span>)</h3>
-  <ul id="cart-items"></ul>
-  <p><strong>Suma:</strong> <span id="cart-total">0</span> zł</p>
-</div>
-
-<!-- SEKCJA PRODUKTÓW -->
-<section id="boze-narodzenie">
-  <h2>🎄 Boże Narodzenie</h2>
-
-  <div cla
-
-      <!-- MENU GÓRNE -->
-<nav style="background-color: #eee; padding: 10px; text-align: center;">
-  <a href="#boze-narodzenie" style="margin: 0 15px;">🎄 Boże Narodzenie</a>
-  <a href="#wielkanoc" style="margin: 0 15px;">🐣 Wielkanoc</a>
-  <a href="#wszystkich-swietych" style="margin: 0 15px;">🕯️ Wszystkich Świętych</a>
-  <a href="#promocje" style="margin: 0 15px;">🔥 Promocje</a>
-  <a href="#nowosci" style="margin: 0 15px;">🆕 Nowości</a>
-</nav>
-
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f9f9f9;
-      color: #333;
-    }
-    header {
-      background: #c62828;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-    nav {
-      text-align: center;
-      margin: 15px;
-    }
-    nav button {
-      margin: 5px;
-      padding: 8px 12px;
-      background: #c62828;
-      color: white;
-      border: none;
-      cursor: pointer;
-    }
-    .container {
-      max-width: 1000px;
-      margin: 0 auto;
-      padding: 20px;
-    }
-    h2 {
-      color: #c62828;
-    }
-    .products {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-    }
-    .product {
-      background: white;
-      border: 1px solid #ddd;
-      border-radius: 5px;
-      padding: 10px;
-      width: calc(33% - 20px);
-      box-sizing: border-box;
-      text-align: center;
-    }
-    .product img {
-      width: 100%;
-      height: auto;
-      max-height: 200px;
-      object-fit: cover;
-    }
-    form {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
-    input, textarea {
-      padding: 10px;
-      border: 1px solid #aaa;
-      border-radius: 4px;
-      width: 100%;
-    }
-    input[type="submit"] {
-      background: #c62828;
-      color: white;
-      cursor: pointer;
-      border: none;
-    }
-    footer {
-      background: #eee;
-      text-align: center;
-      padding: 15px;
-      margin-top: 30px;
-    }
-
-    @media (max-width: 768px) {
-      .product {
-        width: calc(50% - 20px);
-      }
-    }
-
-    @media (max-width: 480px) {
-      .product {
-        width: 100%;
-      }
-    }
+    :root{--accent:#6b4eff;--muted:#6b7280;--bg:#fafafa}
+    *{box-sizing:border-box}html,body{height:100%}body{font-family:Inter,system-ui,Segoe UI,Roboto,"Helvetica Neue",Arial,sans-serif;margin:0;color:#111;background:var(--bg);-webkit-font-smoothing:antialiased}
+    a{color:inherit;text-decoration:none}
+    .container{max-width:1100px;margin:0 auto;padding:24px}
+    header{background:white;box-shadow:0 2px 8px rgba(16,24,40,.06);position:sticky;top:0;z-index:40}
+    .nav{display:flex;align-items:center;gap:16px;padding:12px 24px}
+    .brand{font-weight:700;color:var(--accent);font-size:20px}
+    .nav-links{margin-left:auto;display:flex;gap:12px;align-items:center}
+    .btn{padding:8px 14px;border-radius:10px;border:1px solid rgba(0,0,0,.06);background:white}
+    .hero{display:grid;grid-template-columns:1fr;gap:18px;padding:48px 24px}
+    .hero-card{background:white;padding:28px;border-radius:16px;box-shadow:0 6px 20px rgba(12,16,64,.06)}
+    .hero h1{font-size:34px;margin:0 0 8px}
+    .hero p{color:var(--muted);margin:0 0 18px}
+    .cta{display:inline-block;padding:12px 18px;background:var(--accent);color:white;border-radius:10px}
+    .grid{display:grid;grid-template-columns:repeat(1,1fr);gap:18px}
+    .card{background:white;border-radius:12px;padding:14px;box-shadow:0 6px 18px rgba(12,16,64,.04);display:flex;gap:12px;align-items:center}
+    .card img{width:110px;height:110px;object-fit:cover;border-radius:10px}
+    .card h3{margin:0 0 6px}
+    .price{font-weight:700;color:var(--accent)}
+    .badge{font-size:12px;padding:6px 8px;border-radius:999px;background:#eef2ff;color:var(--accent)}
+    section{padding:28px 0}
+    footer{padding:28px 0;color:var(--muted)}
+    @media(min-width:720px){.hero{grid-template-columns:1fr 420px;align-items:center}.grid{grid-template-columns:repeat(2,1fr)}}
+    @media(min-width:1100px){.grid{grid-template-columns:repeat(3,1fr)}}
   </style>
 </head>
 <body>
   <header>
-    <h1 id="main-title">Znicze i Dekoracje Świąteczne</h1>
-    <p id="subtitle">Sprzedaż ozdób na Wszystkich Świętych, Boże Narodzenie i Wielkanoc</p>
+    <div class="container nav">
+      <div class="brand">Aromafall</div>
+      <nav class="nav-links">
+        <a href="#boze-narodzenie">🎄 Boże Narodzenie</a>
+        <a href="#wielkanoc">🐣 Wielkanoc</a>
+        <a href="#wszyscy-sw">🕯️ Wszystkich Świętych</a>
+        <a href="#promocje">🔥 Promocje</a>
+        <a href="#nowosci">🆕 Nowości</a>
+        <a class="btn" href="#koszyk">Wózek (0)</a>
+      </nav>
+    </div>
   </header>
 
-  <nav>
-    <button onclick="setLanguage('pl')">Polski</button>
-    <button onclick="setLanguage('en')">English</button>
-  </nav>
+  <main class="container">
+    <section class="hero">
+      <div class="hero-card">
+        <h1>Stwórz swoją własną oazę spokoju z Aromafall</h1>
+        <p>Zamów dyfuzory zapachowe i odzyskaj spokój oraz kontrolę nad swoim czasem. Dyfuzory, kadzidła wodospad i naturalne olejki.</p>
+        <a class="cta" href="#nowosci">Zobacz nowości</a>
 
-  <div class="container">
-    <section>
-      <h2 id="section-products-title">Nasze Produkty</h2>
-      <div class="products">
-        <div class="product">
-          <img src="https://via.placeholder.com/300x200?text=Znicz+1" alt="Znicz 1" />
-          <p id="product1">Znicz szklany z wkładem</p>
+        <div style="margin-top:18px;display:flex;gap:12px">
+          <div style="display:flex;flex-direction:column">
+            <small style="color:var(--muted)">Bezpieczne płatności</small>
+            <strong>Przelewy24, karta, Blik</strong>
+          </div>
+          <div style="display:flex;flex-direction:column">
+            <small style="color:var(--muted)">Ekspresowa wysyłka</small>
+            <strong>Wysyłka w 24h z Polski</strong>
+          </div>
         </div>
-        <div class="product">
-          <img src="https://via.placeholder.com/300x200?text=Miko%C5%82aj" alt="Mikołaj" />
-          <p id="product2">Figurka Mikołaja</p>
-        </div>
-        <div class="product">
-          <img src="https://via.placeholder.com/300x200?text=Stroik" alt="Stroik" />
-          <p id="product3">Stroik świąteczny ręcznie robiony</p>
-        </div>
+      </div>
+
+      <div style="background:linear-gradient(180deg,#fff,#f8fafc);padding:20px;border-radius:16px;display:flex;flex-direction:column;gap:12px;align-items:center;justify-content:center">
+        <img src="assets/hero-product.jpg" alt="Aromafall" style="max-width:100%;border-radius:12px;box-shadow:0 8px 30px rgba(16,24,40,.06)">
+        <div style="text-align:center"><strong>Kadzidło wodospad</strong><div class="badge">BESTSELLER</div></div>
       </div>
     </section>
 
-    <section>
-      <h2 id="section-contact-title">Kontakt</h2>
-      <form>
-        <input type="text" placeholder="Imię i nazwisko" required />
-        <input type="email" placeholder="Adres e-mail" required />
-        <textarea placeholder="Twoja wiadomość" rows="5" required></textarea>
-        <input type="submit" value="Wyślij wiadomość" />
-      </form>
-    </section>
-  </div>
+    <!-- Nowe sekcje kategorii -->
 
-  <footer>
-    <p>&copy; 2025 Znicze i Ozdoby Świąteczne</p>
+    <section id="boze-narodzenie">
+      <h2>🎄 Boże Narodzenie</h2>
+      <p style="color:var(--muted)">Magiczne zapachy świąt — świeczki, kadzidła, dekoracje.</p>
+    </section>
+
+    <section id="wielkanoc">
+      <h2>🐣 Wielkanoc</h2>
+      <p style="color:var(--muted)">Wiosenne zapachy i relaksująca atmosfera dla całej rodziny.</p>
+    </section>
+
+    <section id="wszyscy-sw">
+      <h2>🕯️ Wszystkich Świętych</h2>
+      <p style="color:var(--muted)">Subtelne aromaty i eleganckie zestawy na wspomnienie bliskich.</p>
+    </section>
+
+    <section id="promocje">
+      <h2>🔥 Promocje</h2>
+      <p style="color:var(--muted)">Aktualne okazje — wyjątkowe rabaty na nasze produkty!</p>
+    </section>
+
+    <section id="nowosci">
+      <h2>🆕 Nowości</h2>
+      <p style="color:var(--muted)">Poznaj nasze najnowsze produkty i zapachy sezonowe.</p>
+    </section>
+
+  </main>
+
+  <footer class="container">
+    <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+      <div>
+        <strong>Aromafall</strong>
+        <div style="color:var(--muted);font-size:14px">© 2024 Aromafall. All rights reserved.</div>
+      </div>
+      <div style="color:var(--muted)">Follow: Facebook · Instagram</div>
+    </div>
   </footer>
 
   <script>
-    const translations = {
-      en: {
-        'main-title': 'Candles & Holiday Decorations',
-        'subtitle': 'Sale of decorations for All Saints’ Day, Christmas and Easter',
-        'section-products-title': 'Our Products',
-        'section-contact-title': 'Contact',
-        'product1': 'Glass candle with refill',
-        'product2': 'Santa figurine',
-        'product3': 'Handmade holiday wreath',
-        'placeholderName': 'Full name',
-        'placeholderEmail': 'Email address',
-        'placeholderMessage': 'Your message',
-        'submit': 'Send message'
-      },
-      pl: {
-        'main-title': 'Znicze i Dekoracje Świąteczne',
-        'subtitle': 'Sprzedaż ozdób na Wszystkich Świętych, Boże Narodzenie i Wielkanoc',
-        'section-products-title': 'Nasze Produkty',
-        'section-contact-title': 'Kontakt',
-        'product1': 'Znicz szklany z wkładem',
-        'product2': 'Figurka Mikołaja',
-        'product3': 'Stroik świąteczny ręcznie robiony',
-        'placeholderName': 'Imię i nazwisko',
-        'placeholderEmail': 'Adres e-mail',
-        'placeholderMessage': 'Twoja wiadomość',
-        'submit': 'Wyślij wiadomość'
-      }
-    };
-
-    function setLanguage(lang) {
-      const t = translations[lang];
-      document.getElementById('main-title').textContent = t['main-title'];
-      document.getElementById('subtitle').textContent = t['subtitle'];
-      document.getElementById('section-products-title').textContent = t['section-products-title'];
-      document.getElementById('section-contact-title').textContent = t['section-contact-title'];
-      document.getElementById('product1').textContent = t['product1'];
-      document.getElementById('product2').textContent = t['product2'];
-      document.getElementById('product3').textContent = t['product3'];
-      document.querySelector('input[type="text"]').placeholder = t['placeholderName'];
-      document.querySelector('input[type="email"]').placeholder = t['placeholderEmail'];
-      document.querySelector('textarea').placeholder = t['placeholderMessage'];
-      document.querySelector('input[type="submit"]').value = t['submit'];
+    const cart = [];
+    function addToCart(name,price){
+      cart.push({name,price});
+      document.querySelectorAll('.btn[href="#koszyk"]').forEach(el=>el.textContent = `Wózek (${cart.length})`);
+      alert(name + ' dodany do koszyka (demo).');
     }
   </script>
-<!-- BOŻE NARODZENIE -->
-<section id="boze-narodzenie">
-  <h2>🎄 Boże Narodzenie</h2>
-  <p>Tu pojawią się produkty świąteczne.</p>
-</section>
-
-<!-- WIELKANOC -->
-<section id="wielkanoc">
-  <h2>🐣 Wielkanoc</h2>
-  <p>Tu pojawią się produkty wielkanocne.</p>
-</section>
-
-<!-- WSZYSTKICH ŚWIĘTYCH -->
-<section id="wszystkich-swietych">
-  <h2>🕯️ Wszystkich Świętych</h2>
-  <p>Tu pojawią się znicze i ozdoby.</p>
-</section>
-
-<!-- PROMOCJE -->
-<section id="promocje">
-  <h2>🔥 Promocje</h2>
-  <p>Tu będą produkty w promocji.</p>
-</section>
-
-<!-- NOWOŚCI -->
-<section id="nowosci">
-  <h2>🆕 Nowości</h2>
-  <p>Tu pojawią się najnowsze produkty.</p>
-</section>
-<!DOCTYPE html>
-<html lang="pl">
-<head>
-  <meta charset="UTF-8">
-  <title>Sklep – Znicze i Ozdoby</title>
-  <style>
-    body { font-family: Arial; padding: 20px; }
-    nav a { margin: 0 10px; text-decoration: none; }
-    .product { border: 1px solid #ccc; padding: 10px; margin: 10px 0; }
-    .product input { width: 50px; }
-    #cart { position: fixed; top: 20px; right: 20px; background: #f8f8f8; border: 1px solid #ccc; padding: 10px; width: 250px; }
-    #cart ul { padding: 0; list-style: none; }
-    #cart li { margin-bottom: 5px; }
-    button { cursor: pointer; }
-  </style>
-</head>
-<body>
-
-<!-- MENU -->
-<nav>
-  <a href="#boze-narodzenie">🎄 Boże Narodzenie</a>
-  <a href="#wielkanoc">🐣 Wielkanoc</a>
-  <a href="#wszystkich-swietych">🕯️ Wszystkich Świętych</a>
-  <a href="#promocje">🔥 Promocje</a>
-  <a href="#nowosci">🆕 Nowości</a>
-</nav>
-
-<!-- KOSZYK -->
-<div id="cart">
-  <h3>🛒 Koszyk (<span id="cart-count">0</span>)</h3>
-  <ul id="cart-items"></ul>
-  <p><strong>Suma:</strong> <span id="cart-total">0</span> zł</p>
-</div>
-
-<!-- SEKCJA PRODUKTÓW -->
-<section id="boze-narodzenie">
-  <h2>🎄 Boże Narodzenie</h2>
-
-  <div cla
 </body>
 </html>
-
-
