@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Aromafall — Dyfuzory i olejki</title>
+  <meta name="description" content="Dyfuzory zapachowe, kadzidła wodospad i naturalne olejki eteryczne — Aromafall">
+  <style>
+    :root{--accent:#6b4eff;--muted:#6b7280;--bg:#fafafa}
+    *{box-sizing:border-box}html,body{height:100%}body{font-family:Inter,system-ui,Segoe UI,Roboto,"Helvetica Neue",Arial,sans-serif;margin:0;color:#111;background:var(--bg);-webkit-font-smoothing:antialiased}
+    a{color:inherit;text-decoration:none}
+    .container{max-width:1100px;margin:0 auto;padding:24px}
+    header{background:white;box-shadow:0 2px 8px rgba(16,24,40,.06);position:sticky;top:0;z-index:40}
+    .nav{display:flex;align-items:center;gap:16px;padding:12px 24px}
+    .brand{font-weight:700;color:var(--accent);font-size:20px}
+    .nav-links{margin-left:auto;display:flex;gap:12px;align-items:center}
+    .btn{padding:8px 14px;border-radius:10px;border:1px solid rgba(0,0,0,.06);background:white}
+    .hero{display:grid;grid-template-columns:1fr;gap:18px;padding:48px 24px}
+    .hero-card{background:white;padding:28px;border-radius:16px;box-shadow:0 6px 20px rgba(12,16,64,.06)}
+    .hero h1{font-size:34px;margin:0 0 8px}
+    .hero p{color:var(--muted);margin:0 0 18px}
+    .cta{display:inline-block;padding:12px 18px;background:var(--accent);color:white;border-radius:10px}
+    .grid{display:grid;grid-template-columns:repeat(1,1fr);gap:18px}
+    .card{background:white;border-radius:12px;padding:14px;box-shadow:0 6px 18px rgba(12,16,64,.04);display:flex;gap:12px;align-items:center}
+    .card img{width:110px;height:110px;object-fit:cover;border-radius:10px}
+    .card h3{margin:0 0 6px}
+    .price{font-weight:700;color:var(--accent)}
+    .badge{font-size:12px;padding:6px 8px;border-radius:999px;background:#eef2ff;color:var(--accent)}
+    section{padding:28px 0}
+    footer{padding:28px 0;color:var(--muted)}
+    @media(min-width:720px){.hero{grid-template-columns:1fr 420px;align-items:center}.grid{grid-template-columns:repeat(2,1fr)}}
+    @media(min-width:1100px){.grid{grid-template-columns:repeat(3,1fr)}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand">Aromafall</div>
+      <nav class="nav-links">
+        <a href="#boze-narodzenie">🎄 Boże Narodzenie</a>
+        <a href="#wielkanoc">🐣 Wielkanoc</a>
+        <a href="#wszyscy-sw">🕯️ Wszystkich Świętych</a>
+        <a href="#promocje">🔥 Promocje</a>
+        <a href="#nowosci">🆕 Nowości</a>
+        <a class="btn" href="#koszyk">Wózek (0)</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero-card">
+        <h1>Stwórz swoją własną oazę spokoju z Aromafall</h1>
+        <p>Zamów dyfuzory zapachowe i odzyskaj spokój oraz kontrolę nad swoim czasem. Dyfuzory, kadzidła wodospad i naturalne olejki.</p>
+        <a class="cta" href="#nowosci">Zobacz nowości</a>
+
+        <div style="margin-top:18px;display:flex;gap:12px">
+          <div style="display:flex;flex-direction:column">
+            <small style="color:var(--muted)">Bezpieczne płatności</small>
+            <strong>Przelewy24, karta, Blik</strong>
+          </div>
+          <div style="display:flex;flex-direction:column">
+            <small style="color:var(--muted)">Ekspresowa wysyłka</small>
+            <strong>Wysyłka w 24h z Polski</strong>
+          </div>
+        </div>
+      </div>
+
+      <div style="background:linear-gradient(180deg,#fff,#f8fafc);padding:20px;border-radius:16px;display:flex;flex-direction:column;gap:12px;align-items:center;justify-content:center">
+        <img src="assets/hero-product.jpg" alt="Aromafall" style="max-width:100%;border-radius:12px;box-shadow:0 8px 30px rgba(16,24,40,.06)">
+        <div style="text-align:center"><strong>Kadzidło wodospad</strong><div class="badge">BESTSELLER</div></div>
+      </div>
+    </section>
+
+    <!-- Nowe sekcje kategorii -->
+
+    <section id="boze-narodzenie">
+      <h2>🎄 Boże Narodzenie</h2>
+      <p style="color:var(--muted)">Magiczne zapachy świąt — świeczki, kadzidła, dekoracje.</p>
+    </section>
+
+    <section id="wielkanoc">
+      <h2>🐣 Wielkanoc</h2>
+      <p style="color:var(--muted)">Wiosenne zapachy i relaksująca atmosfera dla całej rodziny.</p>
+    </section>
+
+    <section id="wszyscy-sw">
+      <h2>🕯️ Wszystkich Świętych</h2>
+      <p style="color:var(--muted)">Subtelne aromaty i eleganckie zestawy na wspomnienie bliskich.</p>
+    </section>
+
+    <section id="promocje">
+      <h2>🔥 Promocje</h2>
+      <p style="color:var(--muted)">Aktualne okazje — wyjątkowe rabaty na nasze produkty!</p>
+    </section>
+
+    <section id="nowosci">
+      <h2>🆕 Nowości</h2>
+      <p style="color:var(--muted)">Poznaj nasze najnowsze produkty i zapachy sezonowe.</p>
+    </section>
+
+  </main>
+
+  <footer class="container">
+    <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+      <div>
+        <strong>Aromafall</strong>
+        <div style="color:var(--muted);font-size:14px">© 2024 Aromafall. All rights reserved.</div>
+      </div>
+      <div style="color:var(--muted)">Follow: Facebook · Instagram</div>
+    </div>
+  </footer>
+
+  <script>
+    const cart = [];
+    function addToCart(name,price){
+      cart.push({name,price});
+      document.querySelectorAll('.btn[href="#koszyk"]').forEach(el=>el.textContent = `Wózek (${cart.length})`);
+      alert(name + ' dodany do koszyka (demo).');
+    }
+  </script>
+</body>
+</html>
